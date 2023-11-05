@@ -55,9 +55,9 @@ public class project1 {
   	
   		System.out.println("Eren Can Gunel");
   		System.out.println("Huseyin Tozluyurt");
-      System.out.println("Tan Demiryurek");
-      System.out.println("Yigit Keser");
-      System.out.println("Yigit Senoglu");
+        System.out.println("Tan Demiryurek");
+        System.out.println("Yigit Keser");
+        System.out.println("Yigit Senoglu");
     }
   public static void clearConsole() {
         try {
