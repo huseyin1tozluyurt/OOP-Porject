@@ -325,7 +325,7 @@ public class project1 {
         {
             System.out.println("Choose your matrix operation below: ");
             System.out.println("1-)Matrix addition\n2-)Matrix Subtraction\n3-)Matrix Multiplication\n4-)Scalar division of the matrix\n5-)Scalar multiplicaiton of the matrix" +
-                    "\n6-)Transpose of the matrix\n7-)The inverse of the matrix\n8-)Trace of the matrix\n9-)Adjoint of the matrix\n10-)Check the matrix for Orthogonality\nPress 000 to exit program");
+                    "\n6-)Transpose of the matrix\n7-)The inverse of the matrix\n8-)Trace of the matrix\n9-)Adjoint of the matrix\n10-)Check the matrix for Orthogonality\nPress 0 to exit program");
             System.out.print("Operation: ");
             decision=input.nextInt();
         }while(decision<0 || decision>10);
@@ -491,7 +491,7 @@ public class project1 {
                 	}
             }
         }
-        else if( decision==000)
+        else if( decision==0)
         {
         	System.out.println("End of the Programme. ");
         	break;
