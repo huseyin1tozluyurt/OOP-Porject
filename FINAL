@@ -59,6 +59,19 @@ public class project1 {
       System.out.println("Yigit Keser");
       System.out.println("Yigit Senoglu");
     }
+  public static void clearConsole() {
+        try {
+            String os = System.getProperty("os.name").toLowerCase();
+
+            if (os.contains("win")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else if (os.contains("nix") || os.contains("nux") || os.contains("mac")) {
+                new ProcessBuilder("clear").inheritIO().start().waitFor();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     static void printMatrix(double[][] matrix, int row, int column)
     {
         {
@@ -335,7 +348,7 @@ public class project1 {
             System.out.print("Operation: ");
             decision=input.nextInt();
         }while(decision<0 || decision>10);
-
+        clearConsole();
         int columns1, columns2, rows1, rows2;
         double[][] matrix1, matrix2, matrix3;
         double scalar;
